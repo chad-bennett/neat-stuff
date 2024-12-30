@@ -1,320 +1,1075 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-  <title>mister chad's links</title>
-  <meta name="description" content="links dashboard">
-  <meta name="author" content="chad bennett, links, dashboard">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="https://chad-bennett.github.io/links/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="https://chad-bennett.github.io/links/favicon-16x16.png" sizes="16x16">
-  <style>
-    :root {
-      --black: #272119;
-      --shadow: 1px 1px 1px rgba(0, 0, 0, 0.05), 2px 2px 2px rgba(0, 0, 0, 0.08),
-        4px 4px 8px rgba(0, 0, 0, 0.08), 8px 8px 16px rgba(0, 0, 0, 0.15), 16px 16px 32px rgba(0, 0, 0, 0.05);
-      --border-radius: 0.6rem;
-      --frost: url(data:image/png;base64,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), linear-gradient(to top, #fffb 0%, #fff9 100%);
-      background-blend-mode: multiply;
-      background-attachment: fixed;
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
 
-    }
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-    * {
-      box-sizing: border-box;
-    }
 
-    body {
-      background-image: url(data:image/png;base64,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), radial-gradient(ellipse at top, #ffffff33, #ffffff00), linear-gradient(to top, #457c63 0%, #90a278 100%);
-      background-attachment: fixed;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-      color: var(--black);
-    }
-
-    nav {
-      background: #f3f2ed99;
-      padding: 1rem;
-      position: relative;
-      top: 8rem;
-      width: 70vw;
-      display: grid;
-      place-items: center;
-      z-index: 1;
-      margin: auto;
-      border-radius: var(--border-radius);
-      border-top: 1px solid #fffb;
-      border-left: 1px solid #fffb;
-      backdrop-filter: blur(20px) brightness(1.1), blur(20px);
-      -webkit-backdrop-filter: blur(20px) brightness(1.1), blur(20px);
-      box-shadow: var(--shadow);
-    }
-
-    nav>ul {
-      grid-auto-flow: column;
-    }
-
-    nav>ul>li {
-      margin: 0 0.5rem;
-    }
-
-    nav>ul>li a,
-    nav>ul>li .dropdown__title {
-      text-decoration: none;
-      text-align: center;
-      display: inline-block;
-      font-size: 1rem;
-    }
-
-    .dropdown__title {
-      background-color: transparent;
-      border: none;
-      font-family: inherit;
-    }
-
-    nav>ul>li a:focus,
-    nav>ul>li .dropdown__title:focus {
-      outline: none;
-    }
-
-    nav>ul>li>a,
-    nav>ul>li .dropdown__title {
-      padding: 0.8rem;
-      background: none;
-      transition: 200ms all 120ms ease-out;
-      font-weight: 500;
-      color: var(--black);
-    }
-
-    nav>ul>li>a:hover,
-    nav>ul>li .dropdown__title:hover,
-    nav>ul>li>a:focus,
-    nav>ul>li .dropdown__title:focus {
-      box-shadow: none;
-      color: fff;
-    }
-
-    .dropdown .dropdown__menu a:focus {
-      border-radius: 6px;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: grid;
-    }
-
-    nav ul li {
-      padding: 0;
-    }
-
-    .dropdown {
-      position: relative;
-    }
-
-    .dropdown .dropdown__title {
-      display: inline-flex;
-      align-items: center;
-    }
-
-    .dropdown .dropdown__menu {
-      position: absolute;
-      min-width: 15ch;
-      left: 50%;
-      top: calc(100% - 0.25rem);
-      transition: 200ms all 120ms ease-out;
-      transform: rotateX(-90deg) translateX(-50%);
-      transform-origin: top center;
-      visibility: hidden;
-      opacity: 0.3;
-      padding: 1.5rem;
-      background: #fff9;
-      border-top: 1px solid #fffb;
-      border-left: 1px solid #fffb;
-      backdrop-filter: blur(20px) brightness(1.1), blur(20px);
-      -webkit-backdrop-filter: blur(20px) brightness(1.1), blur(20px);
-      border-radius: var(--border-radius);
-      box-shadow: var(--shadow);
-      z-index: 10;
-      border: 0 solid transparent;
-    }
-
-    .dropdown .dropdown__menu a {
-      color: var(--black);
-      display: block;
-      background: none;
-      padding: .5rem 1rem;
-      opacity: 0;
-      box-shadow: none;
-      transition: 200ms all 120ms ease-out;
-    }
-
-    .dropdown .dropdown__menu a:hover {
-      text-decoration: underline;
-      box-shadow: none;
-    }
-
-    .dropdown .dropdown__menu a:focus {
-      outline: none;
-      background-color: rgba(102, 51, 153, 0.1);
-    }
-
-    .dropdown:hover .dropdown__menu,
-    .dropdown:focus-within .dropdown__menu {
-      opacity: 1;
-      transform: rotateX(0) translateX(-50%);
-      visibility: visible;
-      border-top: 1px solid #fffb;
-      border-left: 1px solid #fffb;
-      backdrop-filter: blur(20px) brightness(1.1);
-      -webkit-backdrop-filter: blur(20px) brightness(1.1);
-    }
-
-    .dropdown:hover .dropdown__menu a,
-    .dropdown:focus-within .dropdown__menu a {
-      opacity: 1;
-    }
-
-    .dropdown:hover:after,
-    .dropdown:focus-within:after {
-      opacity: 1;
-      border-top: 1px solid #fffb;
-      border-left: 1px solid #fffb;
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-    }
-
-    @media screen and (max-width: 50em) {
-      nav {
-        width: 10rem;
-        top: 2rem;
-        margin-left: 2rem;
-      }
-
-      nav>ul {
-        grid-auto-flow: row;
-        text-align: center;
-      }
-
-      .dropdown .dropdown__menu {
-        top: calc(100% - 2.5rem);
-        width: 10rem;
-        left: 11.5rem;
-      }
-    }
+<title>neat stuff</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
 </style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      page: 6,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
 </head>
-    <body>
 
-  <nav role="navigation" aria-label="Main Navigation">
-    <ul>
+<body class="nav-fixed">
 
-      <li class="dropdown">
-        <button type="button" class="dropdown__title" aria-expanded="false" aria-controls="organize-dropdown">organize</button>
-        <ul class="dropdown__menu">
-          <li><a href="https://ticktick.com/webapp/#q/all/today">ticktick</a>
-          </li>
-          <li><a href="https://www.icloud.com">icloud</a>
-          </li>
-          <li><a href="https://drive.google.com/#my-drive">google
-              drive</a></li>
-          <li><a href="https://www.box.com/files">box</a>
-          </li>
-          <li><a href="https://www.dropbox.com/home">dropbox</a>
-          </li>
-          <li><a href="https://skydrive.live.com/">onedrive</a>
-          </li>
-        </ul>
-      </li>
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">neat stuff</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">neat stuff</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
 
-      <li class="dropdown">
-        <button type="button" class="dropdown__title" aria-expanded="false" aria-controls="talk-dropdown">talk</button>
-        <ul class="dropdown__menu">
-          <li class="menu-item"><a href="https://www.gmail.com/">gmail</a></li>
-          <li class="menu-item"><a href="https://adfs.lcc.edu/adfs/ls/?username=&amp;wa=wsignin1.0&amp;wtrealm=urn%3afederation%3aMicrosoftOnline&amp;wctx=estsredirect%3d2%26estsrequest%3drQIIAbNSzygpKSi20tfPLy3Jyc_P1stPS8tMTjU2M9VLzs_Vyy9Kz0wBsaKYgQqKhLgEytfuEmBWDPfrfHm6X93y5tNZjDzFJYlFejnJyXqpKaWrGJXwmqifX56of4GRcRMTu6-TZ3xwsM8Jpsuf-W8xCfoXpXumhBe7paakFiWWZObnPWLiDS1OLfLPy6kMyc9OzZvEzJeTn56ZF19clBaflpNfDhQAmliQmFwSX5KZnJ1asotZxczC3NLE0DhFNykpKU3XxMAsVTfRPDVJNzUtLdkw2cTM1DDV4AKLwC5OU8LOtC9KTczJtUX2HgA1">LCC
-              email</a></li>
-          <li class="menu-item"><a href="https://outlook.office.com/mail/">MSU email</a></li>
-          <li class="menu-item"><a href="http://live.com/">outlook</a></li>
-          <li class="menu-item"><a href="https://mail.proton.me/u/0/inbox">proton</a></li>
-          <li class="menu-item"><a href="https://www.facebook.com/">facebook</a>
-          </li>
-          <li class="menu-item"><a href="https://www.instagram.com/accounts/login/">instagram</a>
-          </li>
-          <li class="menu-item"><a href="https://www.linkedin.com/nhome/">linkedin</a>
-          </li>
-        </ul>
-        </li>
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="2023">2023</div><div class="category" data-category="2024">2024</div></div></div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
-      <li class="dropdown">
-        <button type="button" class="dropdown__title" aria-expanded="false" aria-controls="learn-dropdown">learn</button>
-        <ul class="dropdown__menu">
-          <li class="menu-item"><a href="https://eatoncpc.powerschool.com/teachers/pw.html">power
-              teacher</a></li>
-          <li class="menu-item"><a href="http://my.lcc.edu/">LCC home</a></li>
-          <li class="menu-item"><a href="https://myd2l.lcc.edu/">LCC D2L</a></li>
-          <li class="menu-item"><a href="https://auth.msu.edu/app/UserHome?iss=https%3A%2F%2Fauth.msu.edu&amp;session_hint=AUTHENTICATED">MSU
-              dashboard</a></li>
-              <li class="menu-item"><a href="https://d2l.msu.edu/d2l/home">MSU D2L</a></li>
-          <li class="menu-item"><a href="http://www.clocktab.com/">clocktab</a>
-          </li>
-        </ul>
-      </li>
 
-      <li class="dropdown">
-        <button type="button" class="dropdown__title" aria-expanded="false" aria-controls="listen-dropdown">listen</button>
-        <ul class="dropdown__menu">
-          <li class="menu-item"><a href="https://www.ektoplazm.com/">ektoplazm</a>
-          </li>
-          <li class="menu-item"><a href="https://soundcloud.com/discover">soundcloud</a>
-          </li>
-          <li class="menu-item"><a href="https://open.spotify.com/collection/playlists">spotify</a>
-          </li>
-          <li class="menu-item"><a href="https://www.di.fm/">di.fm</a></li>
-          <li class="menu-item"><a href="https://somafm.com/">soma fm</a></li>
-          <li class="menu-item"><a href="https://www.noisli.com/">noisli</a></li>
-          <li class="menu-item"><a href="https://mynoise.net/">my noise</a></li>
-          <li class="menu-item"><a href="https://chad-bennett.github.io/links/">white noise</a></li>
-          <li class="menu-item"><a href="https://mister-chad.com/graphic+design+resources/ambient+sounds">my
-              links</a></li>
-        </ul>
-      </li>
 
-      <li class="dropdown">
-        <button type="button" class="dropdown__title" aria-expanded="false" aria-controls="stuff-dropdown">stuff</button>
-        <ul class="dropdown__menu">
-          <li class="menu-item"><a href="https://feedly.com/i/my">feedly</a>
-          </li>
-          <li class="menu-item"><a href="https://flipboard.com/following">flipboard</a>
-          </li>
-          <li class="menu-item"><a href="https://www.reddit.com/">reddit</a>
-          </li>
-          <li class="menu-item"><a href="https://brutalist.report/">brutalist
-              report</a>
-          <li class="menu-item"><a href="https://read.amazon.com/">kindle</a>
-          </li>
-          <li class="menu-item"><a href="https://www.wunderground.com/weather/us/mi/stockbridge/49285">weather</a>
-          </li>
-          <li class="menu-item"><a href="https://vimeo.com/">vimeo</a></li>
-          <li class="menu-item"><a href="https://www.youtube.com/">youtube</a>
-          </li>
-        </ul>
-      </li>
 
-      <li class="dropdown">
-        <button type="button" class="dropdown__title" aria-expanded="false" aria-controls="portfolio-dropdown">portfolio</button>
-        <ul class="dropdown__menu">
-          <li class="menu-item"><a href="https://illusions-art.deviantart.com/">deviantart
-              portfolio</a></li>
-          <li class="menu-item"><a href="https://www.instagram.com/mister.chad.rules/">my instagram</a></li>
-          <li class="menu-item"><a href="https://www.linkedin.com/in/chadbennett1">linkedin
-              profile</a></li>
-          <li class="menu-item"><a href="https://github.com/">github</a></li>
-          <li class="menu-item"><a href="https://mister-chad.omg.lol">omg.lol</a></li>
-          <li class="menu-item"><a href="https://chad-bennett.github.io/neat-stuff/">neat stuff</a></li>
-          <li class="menu-item"><a href="https://mister-chad.com/">my
-              website</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-</body>
-</html>
+
+<section id="a-curated-collection-of-neat-things-found-while-wandering-the-web." class="level3">
+<h3 class="anchored" data-anchor-id="a-curated-collection-of-neat-things-found-while-wandering-the-web.">A curated collection of neat things found while wandering the web.</h3>
+<p>check out my main website <a href="https://mister-chad.com">mister-chad.com</a>.</p>
+
+
+
+</section>
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="2024" data-listing-date-sort="1716523200000" data-listing-file-modified-sort="1734987932745" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="302">
+<div class="thumbnail">
+<p><a href="./posts/2024-11/index.html" class="no-external"></a></p><a href="./posts/2024-11/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/2024-11/warmMinimalism.jpg" alt="open interior space with natural wood and concrete walls"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2024-11/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-11/index.html" class="no-external">week 11 of 2024</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-11/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('2024'); return false;">
+2024
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-11/index.html" class="no-external">online identity, dystopian fiction, and stealing inspiration.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-11/index.html" class="no-external">
+<div class="listing-date">
+May 24, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="2024" data-listing-date-sort="1715313600000" data-listing-file-modified-sort="1734988686213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="729">
+<div class="thumbnail">
+<p><a href="./posts/2024-09/index.html" class="no-external"></a></p><a href="./posts/2024-09/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/2024-09/h3-bloodline-2-ai-art-thevisual-dome.jpg" alt="robotic man wearing a suit riding the bus"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2024-09/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-09/index.html" class="no-external">week 09 of 2024</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-09/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('2024'); return false;">
+2024
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-09/index.html" class="no-external">creativity, minimalism, and personal style.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-09/index.html" class="no-external">
+<div class="listing-date">
+May 10, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="2024" data-listing-date-sort="1708232400000" data-listing-file-modified-sort="1734988706739" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="551">
+<div class="thumbnail">
+<p><a href="./posts/2024-07/index.html" class="no-external"></a></p><a href="./posts/2024-07/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/2024-07/watercolor generative fill trick.png" alt="watercolor painting of coffee cup on small table"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2024-07/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-07/index.html" class="no-external">week 07 of 2024</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-07/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('2024'); return false;">
+2024
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-07/index.html" class="no-external">art effects using photoshop AI and creative inspiration.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-07/index.html" class="no-external">
+<div class="listing-date">
+Feb 18, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="2024" data-listing-date-sort="1707627600000" data-listing-file-modified-sort="1734990004167" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="447">
+<div class="thumbnail">
+<p><a href="./posts/2024-06/index.html" class="no-external"></a></p><a href="./posts/2024-06/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/2024-06/tomDearie.png" alt="cartoon hero riding a boat through big waves with octopi silhouettes in the water"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2024-06/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-06/index.html" class="no-external">week 06 of 2024</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-06/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('2024'); return false;">
+2024
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-06/index.html" class="no-external">depression, creativity, and indie websites.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-06/index.html" class="no-external">
+<div class="listing-date">
+Feb 11, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="2024" data-listing-date-sort="1707022800000" data-listing-file-modified-sort="1734988721770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="312">
+<div class="thumbnail">
+<p><a href="./posts/2024-05/index.html" class="no-external"></a></p><a href="./posts/2024-05/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/2024-05/abitoads.png" alt="caroon mushroom and frog fishing together"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2024-05/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-05/index.html" class="no-external">week 05 of 2024</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-05/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('2024'); return false;">
+2024
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-05/index.html" class="no-external">anti-social and personal development.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-05/index.html" class="no-external">
+<div class="listing-date">
+Feb 4, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="2024" data-listing-date-sort="1706418000000" data-listing-file-modified-sort="1734988383773" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="765">
+<div class="thumbnail">
+<p><a href="./posts/2024-04/index.html" class="no-external"></a></p><a href="./posts/2024-04/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/2024-04/toulan.jpg" alt="retro-style image of man sitting in chair on balcony in the woods with strong reds and greens"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2024-04/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-04/index.html" class="no-external">week 04 of 2024</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-04/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('2024'); return false;">
+2024
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-04/index.html" class="no-external">design journey, ambiguity, and slow design.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-04/index.html" class="no-external">
+<div class="listing-date">
+Jan 28, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="2024" data-listing-date-sort="1705813200000" data-listing-file-modified-sort="1734988301787" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="276">
+<div class="thumbnail">
+<p><a href="./posts/2024-03/index.html" class="no-external"></a></p><a href="./posts/2024-03/index.html" class="no-external">
+<p class="card-img-top"><img data-src="posts/2024-03/waiderIce.jpg" alt="abstract blue swirls"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2024-03/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-03/index.html" class="no-external">week 03 of 2024</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-03/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('2024'); return false;">
+2024
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-03/index.html" class="no-external">graphic design resources, visual inspiration, and storyboarding. </a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-03/index.html" class="no-external">
+<div class="listing-date">
+Jan 21, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="2024" data-listing-date-sort="1705208400000" data-listing-file-modified-sort="1734988183871" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="497">
+<div class="thumbnail">
+<p><a href="./posts/2024-02/index.html" class="no-external"></a></p><a href="./posts/2024-02/index.html" class="no-external">
+<p class="card-img-top"><img data-src="posts/2024-02/860daf4e03ba50fd63682223d17403bb_MD5.jpeg" alt="small table and chair with a cute cat"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2024-02/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-02/index.html" class="no-external">week 02 of 2024</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-02/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('2024'); return false;">
+2024
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-02/index.html" class="no-external">content curation, organizing my neat finds, and design resources.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-02/index.html" class="no-external">
+<div class="listing-date">
+Jan 14, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-categories="2023" data-listing-date-sort="1679198400000" data-listing-file-modified-sort="1735503398494" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="92">
+<div class="thumbnail">
+<p><a href="./posts/2023-11/index.html" class="no-external"></a></p><a href="./posts/2023-11/index.html" class="no-external">
+<p class="card-img-top"><img data-src="posts/2023-11/robokitty.jpg" alt="cute cyborg cat"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2023-11/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-11/index.html" class="no-external">week 11 of 2023</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2023-11/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
+2023
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2023-11/index.html" class="no-external">read it later services.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-11/index.html" class="no-external">
+<div class="listing-date">
+Mar 19, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="9" data-categories="2023" data-listing-date-sort="1678597200000" data-listing-file-modified-sort="1735503114641" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="874">
+<div class="thumbnail">
+<p><a href="./posts/2023-10/index.html" class="no-external"></a></p><a href="./posts/2023-10/index.html" class="no-external">
+<p class="card-img-top"><img data-src="posts/2023-10/browning.png" alt="man walking on giant stilts in front of house"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2023-10/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-10/index.html" class="no-external">week 10 of 2023</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2023-10/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
+2023
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2023-10/index.html" class="no-external">fascination, wabi sabi, design resources, and procrastination.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-10/index.html" class="no-external">
+<div class="listing-date">
+Mar 12, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="10" data-categories="2023" data-listing-date-sort="1676782800000" data-listing-file-modified-sort="1735500661463" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="206">
+<div class="thumbnail">
+<p><a href="./posts/2023-07/index.html" class="no-external"></a></p><a href="./posts/2023-07/index.html" class="no-external">
+<p class="card-img-top"><img data-src="posts/2023-07/francisco.jpg" alt="warm cartoon house and street"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2023-07/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-07/index.html" class="no-external">week 07 of 2023</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2023-07/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
+2023
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2023-07/index.html" class="no-external">a few random quotes this week.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-07/index.html" class="no-external">
+<div class="listing-date">
+Feb 19, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="11" data-categories="2023" data-listing-date-sort="1676178000000" data-listing-file-modified-sort="1735500394833" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="406">
+<div class="thumbnail">
+<p><a href="./posts/2023-06/index.html" class="no-external"></a></p><a href="./posts/2023-06/index.html" class="no-external">
+<p class="card-img-top"><img data-src="posts/2023-06/polarColor.png" alt="colorful circle with polar coordinates"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2023-06/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-06/index.html" class="no-external">week 06 of 2024</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2023-06/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
+2023
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2023-06/index.html" class="no-external">color, games, virtual worlds.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-06/index.html" class="no-external">
+<div class="listing-date">
+Feb 12, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="12" data-categories="2023" data-listing-date-sort="1675573200000" data-listing-file-modified-sort="1735503292885" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="935">
+<div class="thumbnail">
+<p><a href="./posts/2023-05/index.html" class="no-external"></a></p><a href="./posts/2023-05/index.html" class="no-external">
+<p class="card-img-top"><img data-src="posts/2023-05/redwings.jpg" alt="logo designs for detroit red wings by luc suave"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2023-05/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-05/index.html" class="no-external">week 05 of 2023</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2023-05/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
+2023
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2023-05/index.html" class="no-external">design tools, inspirations, web experiments.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-05/index.html" class="no-external">
+<div class="listing-date">
+Feb 5, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="13" data-categories="2023" data-listing-date-sort="1674363600000" data-listing-file-modified-sort="1735497527606" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="439">
+<div class="thumbnail">
+<p><a href="./posts/2023-03/index.qmd.html" class="no-external"></a></p><a href="./posts/2023-03/index.qmd.html" class="no-external">
+<p class="card-img-top"><img data-src="posts/2023-03/Pasted image 20230122190644.png" alt="purple yellow world"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2023-03/index.qmd.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-03/index.qmd.html" class="no-external">week 03 of 2023</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2023-03/index.qmd.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
+2023
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2023-03/index.qmd.html" class="no-external">fonts, inputs, and colors.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-03/index.qmd.html" class="no-external">
+<div class="listing-date">
+Jan 22, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="14" data-categories="2023" data-listing-date-sort="1673758800000" data-listing-file-modified-sort="1735497766242" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="775">
+<div class="thumbnail">
+<p><a href="./posts/2023-02/index.qmd.html" class="no-external"></a></p><a href="./posts/2023-02/index.qmd.html" class="no-external">
+<p class="card-img-top"><img data-src="posts/2023-02/Bordeaux_861.jpg" alt="drawing of woman created on map base"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2023-02/index.qmd.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-02/index.qmd.html" class="no-external">week 02 of 2023</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2023-02/index.qmd.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('2023'); return false;">
+2023
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2023-02/index.qmd.html" class="no-external">design, creativity, and fonts.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-02/index.qmd.html" class="no-external">
+<div class="listing-date">
+Jan 15, 2023
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
