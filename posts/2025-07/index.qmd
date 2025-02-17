@@ -1,0 +1,51 @@
+---
+title: "week 7 of 2025"
+date: "2025-02-17"
+description: "a few random quotes and web design stuff"
+categories: [2025]
+format:
+  html:
+    toc: true
+    toc-title: page content
+    smooth-scroll: true
+---
+
+# week 7 of 2025
+
+![person with flaming head](egle.jpg)\
+
+::: {.column-margin}
+[Egle Plytnikaite](https://egle.plytnikaite.com) is a Lithuanian vector artist that tells amazing stories with simple shapes and colors. Wonderful editorial illustration work.
+:::
+
+---
+
+> My wish for you is that you continue. Continue to be who you are, to astonish a mean world with your acts of kindness. The effect you have on others' lives is the highest expression of your own.
+>
+> — Maya Angelou
+
+> I oscillate between thinking I am crazy, and thinking I am not crazy enough.
+>
+> — Joyce Carol Oates
+
+> Play leads to brain plasticity, adaptability, and creativity. Nothing fires up the brain like play.
+>
+> — Stuart Brown (founder of the [National Institute for Play](https://nifplay.org))
+
+> I'm in favor of an art that does something other than just sit on its ass in a museum.
+>
+> — Claes Oldenburg
+
+> Fear often signals that something truly matters to you.
+>
+> — Anne-Laure Le Cunff
+
+---
+
+### web design stuff
+
+[web.dev](https://web.dev) have free online courses covering the basics of [html](https://web.dev/learn/html) and [css](https://web.dev/learn/css). We are starting coding soon in the Introduction to Web Design course I teach and these are going to be solid reference sites. There are also good courses on things like [images](https://web.dev/learn/images), [responsive design](https://web.dev/learn/design), and [javascript](https://web.dev/learn/javascript) but I'm sticking with just html and css for now.
+
+[32 bit cafe](https://32bit.cafe) is an [indieweb](https://indieweb.org/) community of web designers and hobbyists.
+
+[100 things you can do on your personal website.](https://jamesg.blog/2024/02/19/personal-website-ideas)
