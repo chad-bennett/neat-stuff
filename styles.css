@@ -162,6 +162,7 @@ iframe:hover {
 }
 
 blockquote {
+    min-width: 100%;
     padding: 2rem !important;
     margin: 2rem auto;
     margin-bottom: 3rem !important;
